@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!-- enables appropriate screen size adjustments-->
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon"/>
+	<title>Vapor-Tek FAQ</title>
+	<link rel="shortcut icon" href="../sources/favicon.ico" type="image/x-icon"/>
+	<!-- Bootstrap * * * * * * * * * * * * * * * * * * * * -->
+	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- stylesheet for social media icons -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!-- jQuery (necessary for the contact form Request Callback button) -->        
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+	<!-- Custom Links * * * * * * * * * * * * * * * * * * * * -->
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/custom.css">
+	<!-- link rel="stylesheet" type="text/css" href="css/custom1.css" -->
+</head>
+
+
+<!-- HEAD | BODY SEPARATION = = = = = = = = = = = = = = = = = = = = = =  -->
+
+<body>
+	<!--  jQuery function - if 'callback' checkbox ticked = display additional input for contact number -->
+	<script>
+		$(document).ready(function(){
+			$('input[type="checkbox"]').click(function(){
+				if($(this).attr("value")=="yes"){
+					$("#add-on").toggle();
+				}
+			});
+		});
+	</script>
+	
+	<!-- Header - Logo of Vapor-Tek * * * * * * * * * * * * * * * * * * * * -->
+	<div class="container" id="company-logo">
+		<div id="header1"> <!-- Vapor-Tek Logo -->
+			<div class="container-fluid">
+				<a href="../index.html"> 
+					<img id="brand-image"  src="../sources/logoBlue.png" alt="Website Logo" width="208" height="40" />
+				</a>
+			</div>
+		</div>
+		<div id="header2"> <!-- Border 1 -->
+		</div>
+		<div id="header3"> <!-- Border 2 -->
+		</div>		
+	</div>
+
+	<!-- Navigation * * * * * * * * * * * * * * * * * * * * -->
+	<div class="container">
+
+		<!-- Static navbar -->
+		<nav class="navbar navbar-default" id="on-scroll-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<i class="navbar-brand">The Anti-Corrosion Specialists</i>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="../index.html">Home</a></li>
+						<li class="dropdown">
+							<a href="products.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="products.html">All</a></li>
+								<li><a href="steelgard.html">Steelgard</a></li>
+								<li><a href="cablegard.html">Cablegard</a></li>
+								<li><a href="vaporol.html">Vaporol</a></li>
+								<li role="separator" class="divider"></li>
+								<li class="dropdown-header">Product Datasheets</li>
+								<li><a href="../dataSheets/Vaportek_steelguard.pdf" target="_blank">Steelgard : Regular</a></li>
+								<li><a href="../dataSheets/vaporteksteelguardexport.pdf" target="_blank">Steelgard : Export</a></li>
+								<li><a href="../dataSheets/cablegard.pdf" target="_blank">Cablegard</a></li> 
+								<li><a href="../dataSheets/vaporol.pdf" target="_blank">Vaporol</a></li>
+							</ul>
+						</li>
+						<li><a href="#contact" data-toggle="modal">Contact</a></li>
+						<li class="active"><a href="faq.html">FAQ</a></li>
+					</ul>
+					<!-- Login details -->
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#login" data-toggle="modal">Login(Admin)</a></li>
+						<a href="#"><img src="../sources/facebook.png" height="44" width="44" class="social-media-icons"></a>
+						<a href="#"><img src="../sources/twitter.png" height="44" width="44" class="social-media-icons"></a>
+						<a href="http://www.iso.org/iso/iso_9000"><img src="../sources/iso9001_3.png" height="44" width="44" class="social-media-icons"></a>
+						<!--a href="#"><img src="sources/instagram.png" height="40" width="40" class="social-media-icons"></a-->
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div><!--/.container-fluid -->
+		</nav> 
+	</div> <!--main container -->
+
+	<!--=======================================================================================-->
+
+	<!-- start of content -->
+	<div class="main">
+		<div class="container grid-custom">
+			<div class="customPadding">
+				<div class="row">
+
+					<!-- Carousel - Visible on larger screens hidden on smaller * * * * * * * * * * * * * * * * * * * -->
+					
+					<div class="col-md-12">
+						<h1>Frequently Asked Questions</h1> <!-- Title -->
+						<hr>
+						<h2>Vaporol</h2>
+						<div class="faq-space"></div>
+						<!-- Answers for the FAQ -->
+						<div class="col-md-12">
+
+							<!-- Question 1 -->
+							<h3 class="collapsed faq-question" data-toggle="collapse" data-target="#1">
+								1. What is the dosage rate?
+							</h3>
+							<p class="text-justify faq-page collapse" id="1">
+								To begin with, work on one litre per cubic metre of space to be protected (0.1% by volume). If fuel, lubricating or hydraulic oil is present, (eg. in fuel tanks, hydraulic systems, engines, etc), add an extra 5% Vaporol based on the volume of the oil or fuel.
+							</p>
+
+							<!-- Question 2 -->
+							<h3 class="collapsed faq-question" data-toggle="collapse" data-target="#2">
+								2. Do protected spaces need to be completely sealed?
+							</h3>
+							<p class="text-justify faq-page collapse" id="2">
+								No. It is only necessary that the space should be 'enclosed' to minimise loss of protective vapour. Examples of an 'enclosed' area would be a fuel tank (with the cap on), engine cylinders and crankcases, axle housings, packing cases and similar.
+							</p>
+
+							<!-- Question 3 -->
+							<h3 class="collapsed faq-question" data-toggle="collapse" data-target="#3">
+								3. How long does protection last?
+							</h3>
+							<p class="text-justify faq-page collapse" id="3">
+								This will depend on the conditions and degree of enclosure. To give guidelines: engines have been found to be corrosion-free after five years of storage, and in laboratory tests, mild steel test pieces are still in perfect condition after ten years at 100% relative humidity.
+							</p>
+
+							<!-- Question 4 -->
+							<h3 class="collapsed faq-question" data-toggle="collapse" data-target="#4"">
+								4. How is Vaporol applied?
+							</h3>
+							<p class="text-justify faq-page collapse" id="4">
+								This depends on the circumstances. For example, Vaporol is best sprayed or fogged into voids such as fuel or storage tanks. Although it is not necessary to coat all the internal surfaces, it is advisable to distribute the protective oil throughout the tank in such a way that areas that do not receive a coating are as close as possible to the areas that have been coated. In this way the vapours will quickly diffuse from the coated to the uncoated areas to give protection. Best results are achieved with complete surface coverage since Vaporol contains 'contact' inhibitors as well as vapour phase inhibitors.
+							</p>
+
+							<!-- Question 5 -->
+							<h3 class="collapsed faq-question" data-toggle="collapse" data-target="#5">
+								5. Does Vaporol leave a residue when burned?
+							</h3>
+							<p class="text-justify faq-page collapse" id="5">
+								No. Vaporol is ashless in combustion. This means that there is no need to remove Vaporol from the inside of engines or fuel tanks when they are put into service or returned into service in the case of items that have been laid up for long periods.
+							</p>
+
+							<!-- Question 6 -->
+							<h3 class="collapsed faq-question" data-toggle="collapse" data-target="#6">
+								6. Is Vaporol compatible with other oils?
+							</h3>
+							<p class="text-justify faq-page collapse" id="6">
+								Generally, yes. Mineral oils, vegetable oils and most synthetic oils are compatible. Some speciality oils such as silicones, fluorocarbons or glycols may be incompatible and should be tested.
+							</p>
+
+							<!-- Question 7 -->
+							<h3 class="collapsed faq-question" data-toggle="collapse" data-target="#7">
+								7. What effect does Vaporol have on non-ferrous metals?
+							</h3>
+							<p class="text-justify faq-page collapse" id="7">
+								Vaporol gives positive protection to aluminium and is neutral to most non-ferrous metals. However, Vaporol vapours can cause discoloration on copper, brasses, bronzes and zinc. This effect is generally only cosmetic and does not cause structural damage. Consult Vapor-Tek and/or carry out suitable tests if there is a suspected problem.
+							</p>
+
+							<!-- Question 8 -->
+							<a href="#" class="collapsed faq-question" data-toggle="collapse" data-target="#8">
+								<h3>8. What effect does Vaporol have on non-metals?</h3>
+							</a>
+							<p class="text-justify faq-page collapse" id="8">
+								As a general rule, rubbers, plastics. polymers, and paints, etc, which are classed as oil or solvent resistant, will be unaffected by Vaporol. If there is any doubt, appropriate tests should be carried out - usually by the supplier of the non-metal item. Hydrocarbon rubbers such as natural rubber, SBR, EPDM, Buna and butyl rubber should be avoided.
+							</p>
+
+							<!-- Question 9 -->
+							<h3 class="collapsed faq-question" data-toggle="collapse" data-target="#9">
+								9. Can Vaporol be used in conjunction with desiccants?
+							</h3>
+							<p class="text-justify faq-page collapse" id="9">
+								Yes. Many export packers use both to preserve parts for deep sea transportation.
+							</p>
+
+							<!-- Question 10 -->
+							<h3 class="collapsed faq-question" data-toggle="collapse" data-target="#10">
+								10. Are there any hazards associated with Vaporol?
+							</h3>
+							<p class="text-justify faq-page collapse" id="10">
+								Vaporol is not classed as as hazardous for use or for transportation. However, users should study the 'Health & Safety Data Sheet' carefully. All materials are potentially dangerous - there are only non-hazardous ways of using them.
+							</p>
+
+							<!-- Question 11 -->
+							<h3 class="collapsed faq-question" data-toggle="collapse" data-target="#11">
+								11. What is the storage life of Vaporol?
+							</h3>
+							<p class="text-justify faq-page collapse" id="11">
+								When stored in closed, preferably steel, containers, (for example, as received from Vapor-Tek), the storage or 'shelf-life' under normal conditions of storage is essentially indefinite.
+							</p>
+
+							<!-- Question 12 -->
+							<h3 class="collapsed faq-question" data-toggle="collapse" data-target="#12">
+								12. Does Vaporol conform to any specifications?
+							</h3>
+							<p class="text-justify faq-page collapse" id="12">
+								Yes. It meets the requirements of US specifications MIL-P-46002A (MR) and MIL-I-23310A (AS). However, it has not actually been officially approved since it has not been submitted to the US authorities. It has also been tested according to Federal Test No. 101C, Method 4031, which it passes with ease.
+							</p>
+							<hr>
+						</div>
+					</div>    
+				</div>
+			</div> 
+
+			<div class="footer-push"></div>
+		</div>
+
+		<!-- =============================================================================================================================================== -->
+		<!-- end of first content  -->    
+		<!-- Footer Details * * * * * * * * * * * * * * * * * * * * -->
+		<div class="container">
+			<footer>
+				<p>
+					<strong>CONTACT DETAILS:</strong>
+					<br><br>
+					<i>
+						<strong>Address:</strong> Vapor-Tek Limited, Fairclough Street, Bolton, Lancashire, BL3 2AF, United Kingdom <br>
+						<strong>Telephone:</strong> +44 (0)1204 521795 <br>
+						<strong>Email:</strong> enquiries@vapor-tek.co.uk
+					</i>
+				</p>
+				<hr>
+				<p> &copy; 2016 Vapor-Tek: Created by Redhouse Associates (University of Bolton)</p>
+			</footer> <!-- End Footer -->
+		</div>
+
+		<!-- contact modal ===================================================================================================================================================== -->
+		<div class="modal fade" id="contact" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<form class="form-horizontal" action="../php/contact.php" method="POST" onsubmit="return check()">
+						<div class="modal-header">
+							<h4>Contact</h4>
+						</div>
+						<div class="modal-body">                      
+							<div class="form-group">
+								<label for="name" class="col-sm-2 control-label">Name</label>
+								<div class="col-sm-10">
+									<input type="text" name="name" id="name" class="form-control" placeholder="Enter your name here..." />
+								</div>
+							</div>                       
+							<div class="form-group">
+								<label for="email" class="col-sm-2 control-label">Email</label>
+								<div class="col-sm-10">
+									<input type="email" name="email" id="email" class="form-control" placeholder="Enter your email address..." />
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="message" class="col-sm-2 control-label">Message</label>
+								<div class="col-sm-10">
+									<textarea name="message" id="message" class="form-control" rows="4" maxlength="100" placeholder="Your message.." ></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="message" class="col-sm-2 control-label">Request call back</label>
+								<div class="col-sm-2">
+									<input type="checkbox" name="callback" id="callback" value="yes" class="form-control"/>
+								</div>
+								<div id="add-on" style="display:none;">
+									<br /><br /><br />
+									<label for="message" class="col-sm-2 control-label"></label>
+									<div class="col-sm-10">
+										<input type="number" name="number" id="number" class="form-control" placeholder="Please enter a contact number..." />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<a class="btn btn-primary" data-dismiss="modal">Close</a>
+							<button type="submit" class="btn btn-primary">Send</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- login modal ===================================================================================================================================================== -->
+		<div class="modal fade" id="login" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<form class="form-horizontal" action="../php/login.php" method="POST" onsubmit="return check1()">
+						<div class="modal-header">
+							<h4>Admin Login</h4>
+						</div>
+						<div class="modal-body">                      
+							<div class="form-group">
+								<label for="name" class="col-sm-2 control-label">User ID</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" name="userId" id="userId"  placeholder="User ID" maxlength="40"  />
+								</div>
+							</div>                       
+						</div>
+						<div class="form-group">
+							<label for="password" class="col-sm-2 control-label">Password</label>
+							<div class="col-sm-10">
+								<input type="password" class="form-control" name="userPw" id="userPw"  placeholder="Your password" >
+							</div>
+						</div>                       
+						<div class="modal-footer">
+							<a class="btn btn-primary" data-dismiss="modal">Close</a>
+							<button type="submit" class="btn btn-primary">Login</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div><!-- /LoginForm -->
+
+		<!-- Get the modal -->
+		<script>
+			var modal = document.getElementById('login');
+
+		// When the user clicks anywhere outside the modal, close it
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+	</script>
+
+
+	<!-- JAVASCRIPT / JQUERY * * * * * * * * * * * * * * * * * * * * -->
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../bootstrap/js/custom.js"></script><!-- Custom JavaScript -->
+</body>
+</html>
